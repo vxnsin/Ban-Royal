@@ -222,7 +222,7 @@ client.on("interactionCreate", async (interaction) => {
       })
       .catch((error) => {
         console.error(error);
-        interaction.reply("> `❌` - Fehler beim Bannen des Benutzers.");
+        interaction.reply({content: "> `❌` - Fehler beim Bannen des Benutzers.", ephemeral: true});
       });
   }
 });
