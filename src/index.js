@@ -176,7 +176,7 @@ client.on("interactionCreate", async (interaction) => {
         });
 
         if (totalRemaining % 10 === 0) {
-          const countdownMessage = `# > \`⏳\` - Es verbleiben noch **${totalRemaining}** Spieler.`;
+          const countdownMessage = `# > \`⏳\` - Es verbleiben noch **${totalRemaining}** Teilnehmer.`;
           await interaction.channel.send(countdownMessage);
         }
 
