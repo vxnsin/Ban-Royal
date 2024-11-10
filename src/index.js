@@ -171,9 +171,7 @@ client.on("interactionCreate", async (interaction) => {
         const totalRemaining = remainingMembers.size;
 
         interaction.reply({
-          content: `> \`✅\` - ${user}(\`${
-            user.tag
-          }\`) wurde gebannt. (Verbleibend: **${totalRemaining - 1}**)`,
+          content: `> \`✅\` - ${user}(\`${user.tag}\`) wurde gebannt. (Verbleibend: **${totalRemaining - 1}**)`,
           ephemeral: true,
         });
 
@@ -204,9 +202,8 @@ client.on("interactionCreate", async (interaction) => {
             .setColor("#ffcc00")
             .setTitle("`🏆` - Event Zusammenfassung")
             .setDescription(
-              `# \`🏆\` - Event Zusammenfassung\n\n\`🔢\` - Teilnehmer\n> ${
-                bannedMembers.size + 1
-              }\n\`⌛\` - Dauer\n> ${formattedDuration}`
+              `# \`🏆\` - Event Zusammenfassung\n\n\`🔢\` - Teilnehmer\n> ${bannedMembers.size + 1}
+              \n\`⌛\` - Dauer\n> ${formattedDuration}`
             )
             .setFooter({ text: "Made by Vensin" })
             .setTimestamp();
